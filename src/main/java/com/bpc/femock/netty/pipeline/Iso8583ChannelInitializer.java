@@ -94,7 +94,7 @@ public class Iso8583ChannelInitializer<
     }
 
     protected ChannelHandler createLoggingHandler(C configuration) {
-        return new IsoMessageLoggingHandler(LogLevel.DEBUG,
+        return new IsoMessageLoggingHandler(LogLevel.INFO,
                 configuration.logSensitiveData(),
                 configuration.logFieldDescription(),
                 configuration.getSensitiveDataFields());
